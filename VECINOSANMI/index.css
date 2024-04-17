@@ -1,0 +1,98 @@
+.img-thumbnail{
+    max-width: 80px; 
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+.imagen-container {
+    background-color:  #dbecfc;
+    padding: 20px;
+    margin-top: 20px;
+}
+.imagen-container img {
+    width: 100%;
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta las imágenes para que mantengan la proporción */
+}
+.custom-h3 {
+    font-size: 1.3rem; /* Tamaño de la fuente */
+    text-align: left; /* Alineación del texto al centro */
+    font-weight: normal;
+    line-height: 1.8; 
+}
+.img-muni{
+    max-width: 600px; 
+}
+.footer-section {
+    background-color: #dbecfc;
+    padding: 20px; /* Espacio interno */
+    margin-top: 20px; /* Margen superior */
+}
+
+h6 {
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #c4dcf8; /* Cambia este valor por el azul que desees */
+    margin: 0; /* Asegura que no haya margen alrededor del cuerpo */
+    padding: 0; /* Asegura que no haya relleno alrededor del cuerpo */
+}
+
+.evento {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 100, 0.7);
+    color: white;
+    padding: 5px;
+}
+.card-title {
+    color: black;
+}
+.card-text {
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#imagen_evento {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+#boton-ult{
+    margin-bottom: 20px;
+}
+#container-evento-det{
+    background-color: #dbecfc;
+}
