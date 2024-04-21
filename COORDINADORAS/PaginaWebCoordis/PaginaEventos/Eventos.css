@@ -1,0 +1,44 @@
+.img-thumbnail{
+    max-width: 80px; 
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+	color:#B7AFF6 ;
+}
+.imagen-container {
+    background-color:  #D4D1F5 ; /* Azul claro */
+    padding: 20px;
+    margin-top: 20px;
+}
+.imagen-container img {
+    width: 100%;
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta las imágenes para que mantengan la proporción */
+}
+.custom-h3 {
+    font-size: 1.3rem; /* Tamaño de la fuente personalizado */
+    text-align: left; /* Alineación del texto al centro */
+    font-weight: normal; /* Quita la negrita */
+    line-height: 1.8; 
+}
+.img-muni{
+    max-width: 600px; 
+}
+.footer-section {
+    background-color: #D4D1F5 ; /* Color de fondo */
+    padding: 20px; /* Espacio interno */
+    margin-top: 20px; /* Margen superior */
+}
+
+h6 {
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #B7AFF6; /* Cambia este valor por el azul que desees */
+    margin: 0; /* Asegura que no haya margen alrededor del cuerpo */
+    padding: 0; /* Asegura que no haya relleno alrededor del cuerpo */
+}
