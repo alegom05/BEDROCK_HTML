@@ -1,0 +1,143 @@
+.img-thumbnail{
+    max-width: 80px; 
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+.imagen-container {
+    background-color:  #AFF4C6;
+    padding: 20px;
+    margin-top: 20px;
+}
+.imagen-container img {
+    width: 100%;
+    height: auto; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta las imágenes para que mantengan la proporción */
+}
+/*.custom-h3 {
+    font-size: 1.3rem; 
+    text-align: left; 
+    font-weight: normal;
+    line-height: 1.8; 
+}*/
+.img-muni{
+    max-width: 500px; 
+}
+.footer-section {
+    background-color: #AFF4C6;
+    padding: 20px; /* Espacio interno */
+    margin-top: 20px; /* Margen superior */
+}
+
+h6 {
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #E2F0E7; /* Cambia este valor por el azul que desees */
+    margin: 0; /* Asegura que no haya margen alrededor del cuerpo */
+    padding: 0; /* Asegura que no haya relleno alrededor del cuerpo */
+}
+
+.evento {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000064b3;
+    color: white;
+    padding: 5px;
+}
+.card-title {
+    color: black;
+}
+.card-text {
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#imagen_evento {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+#boton-ult{
+    margin-bottom: 20px;
+}
+#container-evento-det{
+    background-color: #AFF4C6;
+}
+
+.form-label{
+    margin-top: 10px;
+    display: block;
+}
+
+.labelFormulario{
+    margin-top: 10px;
+}
+
+#btnEnvio{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#btnRedireccional{
+    margin-top: 20px;
+}
+
+.headerLOG{
+    background-color: #198754;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#contenedorLOG{
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.miParrafo{
+    font-size: 1.2rem;
+}
+
+#lupaICON,
+#tachoICON {
+  margin: 0; /* Establecer el margen en cero */
+  margin-left: 20px;
+  
+}
