@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+	<link href="./index.css" rel="stylesheet">
+    <title>Historial de Eventos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Kelab", sans-serif;
+            overflow: hidden;
+            font-weight: 550;
+        }
+       
+
+        .tabla-container {
+            width: 1000px; /* Puedes ajustar el ancho según tu preferencia */
+			margin: 300px auto;
+            border-radius: 10px;
+            height: 100vh;
+        }
+
+        .tabla-incidencias {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .tabla-incidencias th, .tabla-incidencias td {
+            border-collapse: collapse;
+            border: 1px solid #008cf7;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .tabla-incidencias th {
+            background-color: #3bc5ec;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ParteSuperior">
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-start align-items-center">
+                <img src="./logos/logo_pag_principal.png" alt="Logo" class="img-thumbnail" style="margin-right: 10px;">
+                <h4 style="margin-top: 10px;">Juntos Por<br>San Miguel!</h4>
+            </div>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <h2 style="margin-top: 10px; margin-right: 40px; text-align: right;">Nombre Completo<br>Rol: XXXXX</h2>
+                <a href="login.html">
+                    <img src="./logos/cerrar_sesion.png" alt="Cerrar Sesión" class="img-thumbnail imagen_cerrar">
+                </a>
+            </div>
+        </div>
+        <nav class="letra_botones_encabezado">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="PaginaPrincipal.html" class="nav-link">Municipalidad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="PaginaEventos.html" class="nav-link">Eventos</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="ReportarIncidencia.html" class="nav-link">Reportar Incidencia</a>
+                </li>-->
+                <li class="nav-item">
+                    <a href="VecinosSanmi.html" class="nav-link">Vecinos sanmiguelinos</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="ListaDeIncidencias.html" class="nav-link">Lista de Incidencias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Calendario.html" class="nav-link">Mira Tu Calendario!</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="HistorialDeEventos.html" class="nav-link">Historial De Eventos</a>
+                </li>-->
+            </ul>
+        </nav>             
+    </div>
+	<div class="container mt-4">
+		<!-- Contenido con imagen centrada -->
+		<div class="tabla-container mt-4">
+		<h1 style="text-align: center;">Perfil del vecino</h1>
+			
+        <!--<label for="filtroEvento">Filtrar por Evento:</label>
+        <select id="filtroEvento">
+            <option value="todos">Todos</option>
+            <option value="Deportivo">Eventos Deportivos</option>
+            <option value="Cultural">Eventos Culturales</option>
+        </select>-->
+
+        <div class="row mt-4">
+            <!-- Primera fila -->
+            <div class="col-md-4">
+                <h4>NOMBRES</h4>
+                <p><h5>Juan Martin</h5></p>
+            </div>
+            <div class="col-md-4">
+                <h4>APELLIDOS</h4>
+                <p><h5>Peres Horna</h5></p>
+            </div>
+            <div class="col-md-4">
+                <h4>DNI</h4>
+                <p><h5>71235894</h5></p>
+            </div>
+        </div>
+
+
+        <div class="row mt-4">
+            <!-- Primera fila -->
+            <div class="col-md-4">
+                <h4>FECHA DE NACIMIENTO</h4>
+                <p><h5>1 de noviembre de 1980</h5></p>
+            </div>
+            <div class="col-md-4">
+                <h4>DIRECCION</h4>
+                <p><h5>Av. Bolivar 123</h5></p>
+            </div>
+            <div class="col-md-4">
+                <h4>URBANIZACION</h4>
+                <p><h5>----------</h5></p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Primera fila -->
+            <div class="col-md-6">
+                <h4>HISTORIAL DE COMPORTAMIENTO:</h4>
+                
+            </div>
+            <div class="col-md-2 d-flex align-items-start">
+                <a href="" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"><h7>Reportar</h7></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        
+        <table id="tablaEventos" class="tabla-incidencias mt-4">
+            <thead>
+                <tr class="table-info">
+                    <th>Fecha</th>
+                    <th>Evento</th>
+                    <th>Motivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12/04/24</td>
+                    <td>Inauguracion Parque "Santa Rosa"</td>
+                    <td>Faltar el respeto a los organizadores del evento</td>
+                </tr>
+                    
+                <tr>
+                    <td>01/01/24</td>
+                    <td>Bienvenida Año nuevo 2024</td>
+                    <td>Ensuciar los parques y veredas</td>
+                </tr>
+                <tr>
+                    <td>10/02/23</td>
+                    <td>Inauguracion Parque "Simon Bolivar"</td>
+                    <td>Faltar el respeto a los organizadores del evento</td>
+                </tr>
+
+                
+                   
+                
+                
+            </tbody>
+        </table>
+    </div>
+
+    
+
+    <!--<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Reportar vecino</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>¿Estas seguro de reportar al vecino?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-darte-cuenta btn_letra_negrita" data-bs-dismiss="modal" id="abrirNuevaModal">Si</button>
+                    <button type="button" class="btn btn-primary btn_letra_negrita" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Reportar al vecino</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="fechaReporte" class="form-label">Fecha:</label>
+                        <input type="date" class="form-control" id="fechaReporte">
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventoReporte" class="form-label">Evento:</label>
+                        <input type="text" class="form-control" id="eventoReporte" placeholder="Ingrese el evento">
+                    </div>
+                    <div class="mb-3">
+                        <label for="motivoReporte" class="form-label">Motivo:</label>
+                        <textarea class="form-control" id="motivoReporte" rows="3" placeholder="Ingrese el motivo"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="registrarReporte">Registrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <script src="HistorialDeEventos.js"></script>
+
+
+    <script>
+        // Función para registrar el reporte
+        document.getElementById('registrarReporte').addEventListener('click', function() {
+            // Obtener los valores de los campos
+            var fecha = document.getElementById('fechaReporte').value;
+            var evento = document.getElementById('eventoReporte').value;
+            var motivo = document.getElementById('motivoReporte').value;
+
+            // Validar si los campos están vacíos
+            if (fecha.trim() === '' || evento.trim() === '' || motivo.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+            } else {
+                // Mostrar los valores en la consola (puedes reemplazar esto con tu lógica de registro real)
+                console.log('Fecha:', fecha);
+                console.log('Evento:', evento);
+                console.log('Motivo:', motivo);
+
+                // Cerrar el modal
+                var modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+                modal.hide();
+
+                // Limpiar los campos después de registrar
+                document.getElementById('fechaReporte').value = '';
+                document.getElementById('eventoReporte').value = '';
+                document.getElementById('motivoReporte').value = '';
+
+                // Mostrar un mensaje de éxito (opcional)
+                alert('Reporte registrado con éxito.');
+            }
+        });
+    </script>
+        
+
+</div>
+
+    <!-- Script para regresar -->
+
+</body>
+</html>
