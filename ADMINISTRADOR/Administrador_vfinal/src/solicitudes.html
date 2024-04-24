@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Administración de solicitudes</title>
+    <link href="./index.css" rel="stylesheet">
+    <style>
+    </style>
+  </head>
+  <body>
+
+  <div class="ParteSuperior">
+    <div class="row">
+      <div class="col-md-3 d-flex justify-content-start align-items-center">
+        <img src="./logos/logo_pag_principal.png" alt="Logo" class="img-thumbnail" style="margin-right: 10px;">
+        <h4 style="margin-top: 10px;">Juntos Por<br>San Miguel!</h4>
+      </div>
+      <div class="col-md-9 d-flex align-items-center justify-content-end">
+        <h2 style="margin-top: 10px; margin-right: 40px; text-align: right;"> Rol: Administrador</h2>
+        <a href="login.html">
+          <img src="./logos/cerrar_sesion.png" alt="Cerrar Sesión" class="img-thumbnail imagen_cerrar">
+        </a>
+      </div>
+    </div>
+    <nav class="letra_botones_encabezado">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="mainAdministrador.html" class="nav-link">Página principal</a>
+        </li>
+        <li class="nav-item">
+          <a href="solicitudes.html" class="nav-link">Administración de solicitudes</a>
+        </li>
+        <li class="nav-item">
+          <a href="personalSerenazgo.html" class="nav-link">Serenazgos</a>
+        </li>
+        <li class="nav-item">
+          <a href="vecinos.html" class="nav-link">Lista de miembros</a>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+
+    <h1 class="texto-principal">Administración de solicitudes</h1>
+
+
+    <!-- Menú desplegable de filtro -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFiltro" data-bs-toggle="dropdown" aria-expanded="false">
+        Filtrar solicitudes por
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownFiltro">
+        <li><a class="dropdown-item" href="#" id="filtro-vecinos">Vecinos</a></li>
+        <li><a class="dropdown-item" href="#" id="filtro-coordinadoras">Coordinadoras</a></li>
+      </ul>
+    </div>
+    <div class="container">
+
+      <!-- Tablas -->
+      <div class="tabla-container " id="tabla-vecinos" style="display: none;">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th colspan="3">Acción a realizar</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de vecinos -->
+            <tr>
+              <td>ENRIQUE SIGIFREDO CENTENO MENDOZA</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>JAIME DANIEL SANTOS BALON</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>MARIA JOSE FRIERE ALMEIDA</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>MONICA CRISTINA GUAMAN GUAMAN</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>MARIO FRANCISCO JATIVA REYES</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>FIDEL ANTONIO VISCAINO BURGOS </td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>HECTOR PATRICIO TAPIA RAMIREZ</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tabla-container" id="tabla-coordinadoras" style="display: none;">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th colspan="3">Acción a realizar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de coordinadoras -->
+            <tr>
+              <td>XIMENA ELIZABETH CAYAMBE BADILLO</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>SONIA LILIAN BERMEO AYNAGUANO</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>KAREN VIVIANA LUZARDO ALARCON</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>STEPHANIE JUDITH BADILLO HERRERA</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+            <tr>
+              <td>ANA MILENA ARBELÁEZ HURTADO</td>
+              <td><button class="btn btn-aprobar">Aprobar</button></td>
+              <td><button type="button" class="btn btn-rechazar btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Rechazar
+              </button></td></td>
+              <td><button type="button" class="btn btn-banear btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Banear
+              </button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Modal1 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Advertencia</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¿Está seguro que desea realizar la acción indicada?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Sí</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="mainAdministrador.html" class="btn-regresar">Regresar</a>
+
+    <script>
+      // Función para mostrar u ocultar la tabla de vecinos o coordinadoras según el filtro seleccionado
+      document.getElementById('filtro-vecinos').addEventListener('click', function() {
+        document.getElementById('tabla-vecinos').style.display = 'block';
+        document.getElementById('tabla-coordinadoras').style.display = 'none';
+      });
+
+      document.getElementById('filtro-coordinadoras').addEventListener('click', function() {
+        document.getElementById('tabla-coordinadoras').style.display = 'block';
+        document.getElementById('tabla-vecinos').style.display = 'none';
+      });
+      document.getElementById('tabla-vecinos').style.display = 'block';
+      document.getElementById('tabla-coordinadoras').style.display = 'none';
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Incluir los archivos JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

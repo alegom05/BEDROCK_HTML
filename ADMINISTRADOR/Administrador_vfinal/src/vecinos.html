@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./index.css" rel="stylesheet">
+        <title>Lista de miembros</title>
+    </head>
+    <body>
+
+    <div class="ParteSuperior">
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-start align-items-center">
+                <img src="./logos/logo_pag_principal.png" alt="Logo" class="img-thumbnail" style="margin-right: 10px;">
+                <h4 style="margin-top: 10px;">Juntos Por<br>San Miguel!</h4>
+            </div>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <h2 style="margin-top: 10px; margin-right: 40px; text-align: right;"> Rol: Administrador</h2>
+                <a href="login.html">
+                    <img src="./logos/cerrar_sesion.png" alt="Cerrar Sesión" class="img-thumbnail imagen_cerrar">
+                </a>
+            </div>
+        </div>
+        <nav class="letra_botones_encabezado">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="mainAdministrador.html" class="nav-link">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="solicitudes.html" class="nav-link">Administración de solicitudes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="personalSerenazgo.html" class="nav-link">Serenazgos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="vecinos.html" class="nav-link">Lista de miembros</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+        <h1 class="texto-principal">Lista de miembros</h1>
+
+
+        <!-- Menú desplegable de filtro -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFiltro" data-bs-toggle="dropdown" aria-expanded="false">
+                Filtrar por
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownFiltro">
+                <li><a class="dropdown-item" href="#" id="filtro-vecinos">Vecinos</a></li>
+                <li><a class="dropdown-item" href="#" id="filtro-coordinadoras">Coordinadoras</a></li>
+            </ul>
+        </div>
+        <div class="container">
+
+            <!-- Tablas -->
+            <div class="tabla-container " id="tabla-vecinos" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Información</th>
+                            <th>Eliminar</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filas de vecinos -->
+                        <tr>
+                            <td>CLAUDIO WILFREDO ZAVALETA BARRIENTOS</td>
+                            <td>Cometió 5 faltas</td>
+
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>LUIS ALBERTO VERGARA YEN</td>
+                            <td>Cometió una falta</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>SERGIO DAVID AGUIRRE BARRIENTOS</td>
+                            <td>Cometió 0 faltas</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>VICTOR PACHECO FLORES</td>
+                            <td>Cometió 3 faltas</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>LOGAN PAREDES PARRISHER PAREDES </td>
+                            <td>Cometió 0 faltas</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>ANA PAUCAR MARCELO</td>
+                            <td>Cometió 0 faltas</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>MELISSA PINTO JATAVE</td>
+                            <td>Cometió 0 faltas</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tabla-container" id="tabla-coordinadoras" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filas de coordinadoras -->
+                        <tr>
+                            <td>LUISA ESPERANZA ZARZOSA CHAVEZ</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+                        </tr>
+                        <tr>
+                            <td>FIORELLA LISSETTE ZARATE VARGAS</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+
+                        </tr>
+                        <tr>
+                            <td>MERCEDES CAROL ZUÑIGA RAMIREZ</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+
+                        </tr>
+                        <tr>
+                            <td>SUSANA CECILIA ZELAYA BURGA</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+
+                        </tr>
+                        <tr>
+                            <td>ELVA MARIA VILLAR OLIVERA</td>
+                            <td><button  class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./icons/trash.svg" alt="Eliminar"></button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Advertencia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Está seguro que desea eliminar al miembro seleccionado?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Sí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="mainAdministrador.html" class="btn-regresar">Regresar</a>
+
+        <script>
+            // Función para mostrar u ocultar la tabla de vecinos o coordinadoras según el filtro seleccionado
+            document.getElementById('filtro-vecinos').addEventListener('click', function() {
+                document.getElementById('tabla-vecinos').style.display = 'block';
+                document.getElementById('tabla-coordinadoras').style.display = 'none';
+            });
+
+            document.getElementById('filtro-coordinadoras').addEventListener('click', function() {
+                document.getElementById('tabla-coordinadoras').style.display = 'block';
+                document.getElementById('tabla-vecinos').style.display = 'none';
+            });
+            document.getElementById('tabla-vecinos').style.display = 'block';
+            document.getElementById('tabla-coordinadoras').style.display = 'none';
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Incluir los archivos JavaScript de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
