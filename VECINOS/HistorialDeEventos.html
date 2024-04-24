@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./index.css" rel="stylesheet">
+    <title>Historial de Eventos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Kelab", sans-serif;
+            overflow: hidden;
+            font-weight: 550;
+        }
+       
+
+        .tabla-container {
+            width: 1000px; /* Puedes ajustar el ancho según tu preferencia */
+			margin: 300px auto;
+            border-radius: 10px;
+            height: 100vh;
+        }
+
+        .tabla-incidencias {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .tabla-incidencias th, .tabla-incidencias td {
+            border-collapse: collapse;
+            border: 1px solid #008cf7;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .tabla-incidencias th {
+            background-color: #3bc5ec;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ParteSuperior">
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-start align-items-center">
+                <img src="./logos/logo_pag_principal.png" alt="Logo" class="img-thumbnail" style="margin-right: 10px;">
+                <h4 style="margin-top: 10px;">Juntos Por<br>San Miguel!</h4>
+            </div>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <h2 style="margin-top: 10px; margin-right: 40px; text-align: right;">Nombre Completo<br>Rol: XXXXX</h2>
+                <a href="login.html">
+                    <img src="./logos/cerrar_sesion.png" alt="Cerrar Sesión" class="img-thumbnail imagen_cerrar">
+                </a>
+            </div>
+        </div>
+        <nav class="letra_botones_encabezado">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="PaginaPrincipal.html" class="nav-link">Municipalidad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="PaginaEventos.html" class="nav-link">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ReportarIncidencia.html" class="nav-link">Reportar Incidencia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ListaDeIncidencias.html" class="nav-link">Lista de Incidencias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Calendario.html" class="nav-link">Mira Tu Calendario!</a>
+                </li>
+                <li class="nav-item">
+                    <a href="HistorialDeEventos.html" class="nav-link">Historial De Eventos</a>
+                </li>
+            </ul>
+        </nav>             
+    </div>
+	<div class="container mt-4">
+		<!-- Contenido con imagen centrada -->
+		<div class="tabla-container mt-4">
+		<h2 style="text-align: center;">Eventos Realizados Este Mes</h2>
+			
+        <label for="filtroEvento">Filtrar por Evento:</label>
+        <select id="filtroEvento">
+            <option value="todos">Todos</option>
+            <option value="Deportivo">Eventos Deportivos</option>
+            <option value="Cultural">Eventos Culturales</option>
+        </select>
+        
+        <table id="tablaEventos" class="tabla-incidencias mt-4">
+            <thead>
+                <tr class="table-info">
+                    <th>Nombre</th>
+                    <th>Lugar</th>
+                    <th>Tipo de Evento</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Evento 1</td>
+                    <td>Lugar 1</td>
+                    <td>Cultural</td>
+                    <td>2024-04-19</td>
+                </tr>
+                <tr>
+                    <td>Evento 2</td>
+                    <td>Lugar 2</td>
+                    <td>Deportivo</td>
+                    <td>2024-04-18</td>
+                </tr>
+                <tr>
+                    <td>Evento 3</td>
+                    <td>Lugar 3</td>
+                    <td>Cultural</td>
+                    <td>2024-04-17</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="HistorialDeEventos.js"></script>
+
+</div>
+
+    <!-- Script para regresar -->
+
+</body>
+</html>
